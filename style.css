@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+
+#header {
+    background-image: url('profile.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 450px; 
+    text-align: center; 
+}
+
+
+.header-content {
+    display: flex;
+    align-items:right;
+    justify-content: flex-start;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+    border: 3px solid #edf1ef; 
+    box-shadow: 2px 2px 5px rgba(26, 76, 152, 0.2);
+    filter: grayscale(30%);
+    transition: transform 0.5s;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkturquoise;
+    text-align: center;
+}
+header h2{
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(93, 180, 215);
+    text-align: center;
+    
+}
+ 
+nav ul {
+    display: flex;
+    list-style:disc;
+    padding:0;
+    background-color: cornflowerblue;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 30px;
+}
+
+a.menu {
+    text-decoration:double;
+    font-weight:bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.menu.home {
+    background-color: #55b3ff;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu.skills {
+    background-color: #ffcc29;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu.about {
+    background-color: #00b894;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu.contact {
+    background-color: #e84393;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fffdfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+.skills-list {
+    list-style-type: square;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.skills-list li {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 60px;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.skills-list h3 {
+    font-size: 24px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+
+.skill-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.skill {
+    font-weight: bold;
+    color: #55b3ff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section h2 {
+    font-size: 36px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.email {
+    font-weight:normal;
+    font-size: 17px;
+    color: #e84393;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer a {
+    color: #55b3ff;
+    text-decoration:dotted;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #3388cc;
+}
